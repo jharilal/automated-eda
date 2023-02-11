@@ -1,5 +1,6 @@
 from typing import Union
 import os
+import time
 
 class FileSelection:
 
@@ -49,6 +50,7 @@ class FileSelection:
                 user_selection = int(input('CSV number to analyze: '))
                 if user_selection == 0:
                     print('Exiting File Selection...')
+                    time.sleep(1.5)
                     break
                 else:
                     return csv_dict[user_selection]
